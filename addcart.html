@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <header id="header">  
+    </header>
+      <h3>Cart Items</h3>
+      <section>
+        <table>
+          <thead>
+            <tr>
+              <th>S.No</th>
+              <th>FoodName</th>
+              <th>Price</th>
+              <th>Actions</th>
+            </tr>
+
+          </thead>
+          <tbody id="cart-table">
+           <tbody>
+        </table>
+       
+       <button> <a  class="order-button" href="payment.html"  >Order Now</a></button>
+      </section>
+ <script src="assets/js/jquery.min.js"></script>
+  <script>
+      $("#header").load("header.html");
+
+      function displayitems() {
+        let cartItems= [
+          {SNo: 1,FoodName:"vegbriyani", Price:120,},
+          {SNo:"2",FoodName:"vegburger",Price:80},
+          {SNo:"3",FoodName:"vegnoodles",Price:27},
+          {SNo:"4",FoodName:"vegrice",Price:87}
+        ];
+
+        let content = "";
+        for (let cart of cartItems) {
+           let deletebutton=`<a href="#" > Delete </a>`
+          content =
+            content +
+            "<tr><td>" + cart.SNo + "</td><td>" + cart.ProductName + "</td><td>" + cart.Price + "</td><td>" + deletebutton + "</td></tr>";
+        }
+        console.log(content);
+
+        let total=0;
+        for (let i = 0; i < cartItems.length; i++)
+         {
+            total += cartItems[i].Price;
+         }
+         console.log(total);
+
+
+        document.querySelector("#cart-table").innerHTML = content;
+        document.querySelector("#total").innerHTML = total;
+      }
+      displayitems();
+      deleteitem()
+      {
+        let del=confrim("Do You want remove item from cart");
+        if(del)
+        {
+          alert("Successfully Deleted");
+          window.location.href="task";
+        }
+      }
+    </script>
+  </body>
+</html>
+
+    
+</body>
+</html>

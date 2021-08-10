@@ -1,0 +1,121 @@
+button{ 
+    margin: 0px auto;
+    background-color: none;
+    color: inherit;
+    border: none;
+    padding: 0px;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;  
+}
+body{  
+    background-image: url("images/wallpaper.jpg");
+}  
+ .header{
+        background-color: antiquewhite;
+        text-decoration:none;
+        
+        
+        }
+        
+.header a {
+
+     border-radius: 10px;
+        background-color:rgb(59, 12, 12);
+        color:white;
+        padding: 10px 20px;
+        font-size: 19px;
+        cursor: pointer;
+        float: right;
+
+         }
+        .btn  { margin: 0px auto;
+            background-color: none;
+            color: inherit;
+            border: none;
+            padding: 0px;
+            font: inherit;
+            cursor: pointer;
+            outline: inherit;
+    
+             }
+          .foodlogo {
+                width: 20%;
+                height: 20%;
+                /* display: inline; */
+                float: left;
+                }
+
+          .header_h1{
+            color:white;
+        }
+ .navlink{
+     padding: 0.5%;
+     text-decoration: none;
+     color: blanchedalmond;
+     font-size: 30px;
+ }
+
+ .navlink:hover {
+     background-color: chocolate;
+ }
+ .navlink:focus, .navlink:active {
+     background-color: cornsilk;
+     transition: none;
+ }
+ /* .nav a{
+     float: left;
+ } */
+ .sign_submit {
+    float:center;
+ }
+ form{
+     margin:65px 500px 100px 500px;
+     border: 4px solid burlywood;
+     padding:20px; 
+     background-color:burlywood;
+ }
+ .content{
+ color: white;   
+ }
+.vegimg{
+    float: left;
+    padding: 2%;
+    width:200px;
+    height:200px;
+}
+.Nonvegimg{
+    float: left;
+    padding: 2%;
+    width:200px;
+    height:200px;
+
+}
+.veg
+{
+    position :absolute;
+    top: 50%;
+    left: 45%;
+    width:90px;
+    height:90px;
+ }
+  
+.Nonveg{
+    position :absolute;
+    top: 50%;
+    left: 55%;
+    width:90px;
+    height:90px;
+}
+.reg{
+    text-align :center;
+    color: brown;
+    border:3px brown;
+    
+}   
+.order{
+    margin: 80px 400px 0px 400px;
+    padding:  50px 0px 40px 80px;
+    border: solid;
+    background-color: burlywood;
+}   
