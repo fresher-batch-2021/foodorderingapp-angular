@@ -10,6 +10,11 @@ import { ContactComponent } from './contact/contact.component';
 import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
 import { FormsModule } from '@angular/forms';
+import { Veg } from './veg.html/veg.html.component';
+import { VegComponent } from './veg/veg.component';
+import { NonvegComponent } from './nonveg/nonveg.component';
+import { OrderComponent } from './order/order.component';
+import { AddcartComponent } from './addcart/addcart.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +24,12 @@ import { FormsModule } from '@angular/forms';
     AboutComponent,
     ContactComponent,
     LoginComponent,
-    SignupComponent
+    SignupComponent,
+    Veg.HtmlComponent,
+    VegComponent,
+    NonvegComponent,
+    OrderComponent,
+    AddcartComponent
   ],
   imports: [
     BrowserModule,

@@ -9,7 +9,7 @@ button{
     outline: inherit;  
 }
 body{  
-    background-image: url("images/wallpaper.jpg");
+    background-image: url("assets/images/wallpaper.jpg");
 }  
  .header{
         background-color: antiquewhite;
@@ -76,7 +76,7 @@ body{
      background-color:burlywood;
  }
  .content{
- color: white;   
+ text-color:white;   
  }
 .vegimg{
     float: left;
